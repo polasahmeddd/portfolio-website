@@ -1,0 +1,663 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>IV Better SEO Case Study: 2.57M Impressions, 21.2K Clicks</title>
+  <meta name="description" content="How an SEO strategy took IV Better from near zero to 2.57M Google impressions and 21.2K organic clicks with service pages, location pages and E-E-A-T content.">
+  <link rel="canonical" href="https://polasahmed.com/case-study-iv-better/">
+  <meta name="robots" content="index, follow, max-image-preview:large">
+  <meta name="theme-color" content="#0B2A2D">
+
+  <!-- Open Graph / social sharing -->
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="polasahmed.com">
+  <meta property="og:title" content="IV Better SEO Case Study: From Zero to 21K+ Clicks">
+  <meta property="og:description" content="2.57M impressions and 21.2K organic clicks from Google for a mobile IV therapy brand.">
+  <meta property="og:url" content="https://polasahmed.com/case-study-iv-better/">
+  <meta property="og:image" content="https://polasahmed.com/case-study-iv-better/images/iv-better-organic-growth-21k-clicks.webp">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <!-- Structured data. Update datePublished / author if needed. -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "From Zero to 21K+ Clicks: How IV Better Dominated Liquid IV Search Queries",
+    "description": "SEO case study: 2.57M impressions and 21.2K organic clicks for IV Better, a mobile IV therapy provider.",
+    "image": ["https://polasahmed.com/case-study-iv-better/images/iv-better-organic-growth-21k-clicks.webp"],
+    "mainEntityOfPage": "https://polasahmed.com/case-study-iv-better/",
+    "datePublished": "2026-09-19",
+    "author": { "@type": "Organization", "name": "polasahmed.com", "url": "https://polasahmed.com/" },
+    "publisher": { "@type": "Organization", "name": "polasahmed.com", "url": "https://polasahmed.com/" }
+  }
+  </script>
+
+  <link rel="preload" as="image" href="images/iv-better-organic-growth-21k-clicks.webp" type="image/webp">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,600;12..96,700;12..96,800&family=Literata:opsz,wght@7..72,400;7..72,500&display=swap" rel="stylesheet">
+
+  <style>
+    /* ------------------------------------------------------------------
+       Design tokens: change these to re-skin the whole page.
+       ------------------------------------------------------------------ */
+    :root {
+      --saline: #EEF5F4;        /* soft clinical tint for alternating sections */
+      --paper: #FFFFFF;
+      --ink: #0B2A2D;           /* deep teal-black: text and dark sections */
+      --ink-soft: #3A5A5F;      /* secondary text */
+      --line: #CBDEDC;          /* hairlines */
+      --teal: #13B5AD;          /* IV tubing / decorative */
+      --teal-strong: #07736E;   /* teal that passes contrast on light backgrounds */
+      --amber: #F6B94A;         /* buttons and focus on dark sections */
+      --radius: 10px;
+      --wrap: 1160px;
+      --overlap: clamp(4rem, 9vw, 8rem);
+      --font-display: "Bricolage Grotesque", "Segoe UI", system-ui, -apple-system, sans-serif;
+      --font-text: "Literata", Georgia, "Times New Roman", serif;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; }
+    html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+    body {
+      margin: 0;
+      background: var(--paper);
+      color: var(--ink);
+      font-family: var(--font-text);
+      font-size: 1.0625rem;
+      line-height: 1.7;
+      -webkit-font-smoothing: antialiased;
+    }
+    img { display: block; max-width: 100%; height: auto; }
+    h1, h2, h3 {
+      margin: 0;
+      font-family: var(--font-display);
+      line-height: 1.1;
+      letter-spacing: -0.02em;
+      text-wrap: balance;
+    }
+    h2 { font-size: clamp(1.9rem, 3.6vw, 3rem); font-weight: 700; }
+    h3 { font-size: 1.3rem; font-weight: 600; letter-spacing: -0.01em; }
+    p { margin: 0 0 1.1em; max-width: 66ch; }
+    a { color: var(--teal-strong); text-underline-offset: 0.2em; }
+    a:focus-visible { outline: 3px solid var(--teal-strong); outline-offset: 3px; border-radius: 4px; }
+
+    .wrap { width: min(100% - 2.5rem, var(--wrap)); margin-inline: auto; }
+    section[id] { scroll-margin-top: 4.5rem; }
+
+    .skip {
+      position: absolute; left: -999px; top: 0.75rem; z-index: 100;
+      background: var(--amber); color: var(--ink); padding: 0.6rem 1rem;
+      border-radius: 6px; font-family: var(--font-display); font-weight: 700;
+    }
+    .skip:focus { left: 0.75rem; }
+
+    /* ------------------------------------------------------------------
+       Buttons
+       ------------------------------------------------------------------ */
+    .btn {
+      display: inline-block;
+      background: var(--amber);
+      color: var(--ink);
+      font-family: var(--font-display);
+      font-weight: 700;
+      font-size: 1rem;
+      line-height: 1;
+      padding: 0.95rem 1.4rem;
+      border-radius: 8px;
+      text-decoration: none;
+      transition: background-color 0.15s ease;
+    }
+    .btn:hover { background: #FFCB6B; }
+    .btn--sm { padding: 0.65rem 1rem; font-size: 0.92rem; }
+
+    /* ------------------------------------------------------------------
+       Site header
+       ------------------------------------------------------------------ */
+    .site {
+      position: sticky; top: 0; z-index: 50;
+      background: var(--ink);
+      color: #fff;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+    .site .bar { display: flex; align-items: center; gap: 1.5rem; min-height: 4rem; }
+    .brand {
+      font-family: var(--font-display); font-weight: 700; font-size: 1.05rem;
+      letter-spacing: -0.01em; color: #fff; text-decoration: none;
+    }
+    .site nav { display: flex; gap: 1.75rem; margin-left: auto; }
+    .site nav a {
+      font-family: var(--font-display); font-weight: 500; font-size: 0.95rem;
+      color: rgba(255, 255, 255, 0.8); text-decoration: none;
+    }
+    .site nav a:hover { color: #fff; }
+    .site a:focus-visible, .hero a:focus-visible, .cta a:focus-visible, .foot a:focus-visible {
+      outline-color: var(--amber);
+    }
+
+    /* ------------------------------------------------------------------
+       Hero: the growth chart is the hero
+       ------------------------------------------------------------------ */
+    .hero {
+      display: flow-root;
+      background-color: var(--ink);
+      /* faint gridlines echo a Search Console chart */
+      background-image: repeating-linear-gradient(
+        to bottom, transparent 0, transparent 79px,
+        rgba(255, 255, 255, 0.06) 79px, rgba(255, 255, 255, 0.06) 80px);
+      color: #fff;
+      padding-top: clamp(3rem, 7vw, 6rem);
+    }
+    .hero h1 { font-weight: 800; }
+    .h1-main {
+      display: block;
+      font-size: clamp(2.6rem, 7vw, 5.6rem);
+      line-height: 0.98;
+      letter-spacing: -0.035em;
+    }
+    .h1-sub {
+      display: block;
+      margin-top: 1rem;
+      max-width: 30ch;
+      font-size: clamp(1.3rem, 2.6vw, 2rem);
+      font-weight: 500;
+      line-height: 1.15;
+      letter-spacing: -0.01em;
+      color: rgba(255, 255, 255, 0.88);
+    }
+    .lede { margin: 1.75rem 0 2rem; font-size: 1.2rem; color: rgba(255, 255, 255, 0.82); }
+    .actions { display: flex; flex-wrap: wrap; align-items: center; gap: 1.5rem; margin: 0; max-width: none; }
+    .link-light {
+      font-family: var(--font-display); font-weight: 600; color: #fff;
+      text-decoration-color: rgba(255, 255, 255, 0.5);
+    }
+
+    .hero-shot {
+      position: relative; z-index: 2;
+      margin: clamp(2.5rem, 5vw, 4rem) 0 calc(var(--overlap) * -1);
+      padding: 0.75rem 0.75rem 0;
+      background: var(--paper);
+      color: var(--ink);
+      border-radius: var(--radius);
+      box-shadow: 0 24px 60px rgba(4, 20, 22, 0.35);
+    }
+    .hero-shot img { width: 100%; border-radius: 6px; animation: draw 1.7s cubic-bezier(0.22, 0.7, 0.2, 1) 0.3s both; }
+    .hero-shot figcaption { padding: 0.9rem 0.5rem 1rem; font-size: 0.92rem; line-height: 1.5; color: var(--ink-soft); }
+
+    /* The chart "draws in" from left to right on load: the page's one animation. */
+    @keyframes draw {
+      from { clip-path: inset(0 100% 0 0); }
+      to   { clip-path: inset(0 0 0 0); }
+    }
+
+    /* ------------------------------------------------------------------
+       Headline numbers
+       ------------------------------------------------------------------ */
+    .ledger { background: var(--saline); padding: calc(var(--overlap) + 2.5rem) 0 clamp(3rem, 6vw, 5rem); }
+    .stats { display: grid; grid-template-columns: repeat(4, 1fr); margin: 0; }
+    .stats > div {
+      display: flex; flex-direction: column-reverse; justify-content: flex-end;
+      padding: 0 1.5rem;
+      border-left: 1px solid var(--line);
+    }
+    .stats > div:first-child { padding-left: 0; border-left: 0; }
+    .stats dd {
+      margin: 0;
+      font-family: var(--font-display); font-weight: 800;
+      font-size: clamp(2.4rem, 4.4vw, 3.6rem);
+      line-height: 1; letter-spacing: -0.03em;
+    }
+    .stats dt { margin-top: 0.7rem; font-size: 0.95rem; line-height: 1.45; color: var(--ink-soft); }
+
+    /* ------------------------------------------------------------------
+       Generic sections
+       ------------------------------------------------------------------ */
+    .section { padding: clamp(3.5rem, 8vw, 6.5rem) 0; }
+    .section--saline { background: var(--saline); }
+    .section--flush-top { padding-top: 0; }
+
+    .split {
+      display: grid;
+      grid-template-columns: minmax(0, 5fr) minmax(0, 7fr);
+      gap: clamp(2rem, 6vw, 5rem);
+      align-items: start;
+    }
+    .split-head { position: sticky; top: 6rem; }
+    .split-head p { margin-top: 1.25rem; color: var(--ink-soft); }
+
+    /* Overview */
+    .overview {
+      display: grid;
+      grid-template-columns: minmax(0, 7fr) minmax(0, 5fr);
+      gap: clamp(2rem, 5vw, 4.5rem);
+      align-items: center;
+    }
+    .overview h2 { margin-bottom: 1.5rem; }
+    .overview figure { margin: 0; }
+    .overview figure img {
+      width: 100%; aspect-ratio: 4 / 5; object-fit: cover; object-position: 58% 50%;
+      border-radius: var(--radius);
+    }
+
+    .snapshot {
+      display: grid;
+      grid-template-columns: minmax(0, 7fr) minmax(0, 5fr);
+      gap: clamp(2rem, 5vw, 4rem);
+      align-items: start;
+      margin-top: clamp(3rem, 6vw, 5rem);
+    }
+    .snapshot dl { margin: 0; }
+    .snapshot dl > div { padding: 0.9rem 0; border-top: 1px solid var(--line); }
+    .snapshot dt { font-family: var(--font-display); font-weight: 600; font-size: 0.95rem; color: var(--teal-strong); }
+    .snapshot dd { margin: 0.1rem 0 0; }
+
+    /* Screenshots */
+    .shot { margin: 0; }
+    .shot > a {
+      display: block; overflow: hidden;
+      background: var(--paper);
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+    }
+    .shot img { width: 100%; }
+    .shot figcaption { margin-top: 0.7rem; max-width: 62ch; font-size: 0.9rem; line-height: 1.5; color: var(--ink-soft); }
+
+    /* Challenges */
+    .issues { margin: 0; padding: 0; list-style: none; }
+    .issues li { padding: 1.6rem 0; border-top: 1px solid var(--line); }
+    .issues li:first-child { padding-top: 0; border-top: 0; }
+    .issues h3 { margin-bottom: 0.5rem; }
+    .issues p { margin: 0; color: var(--ink-soft); }
+
+    .statement {
+      display: grid;
+      grid-template-columns: minmax(0, 5fr) minmax(0, 7fr);
+      gap: clamp(2rem, 6vw, 5rem);
+      margin-top: clamp(3rem, 6vw, 5rem);
+      padding-top: clamp(2rem, 4vw, 3rem);
+      border-top: 2px solid var(--ink);
+    }
+    .statement .big {
+      margin: 0;
+      font-family: var(--font-display); font-weight: 800;
+      font-size: clamp(2rem, 4.6vw, 3.8rem);
+      line-height: 1.02; letter-spacing: -0.03em;
+    }
+    .statement p:last-child { margin: 0; align-self: end; }
+
+    /* Approach: an IV line with a drop at every step */
+    .flow { margin: 0; padding: 0 0 0 3rem; list-style: none; }
+    .flow li { position: relative; padding-bottom: 2.25rem; }
+    .flow li:last-child { padding-bottom: 0; }
+    .flow li::before {
+      content: ""; position: absolute; left: -2.95rem; top: 0.22rem;
+      width: 1.1rem; height: 1.1rem;
+      background: var(--teal-strong);
+      border-radius: 0 50% 50% 50%;
+      transform: rotate(45deg);
+    }
+    .flow li:not(:last-child)::after {
+      content: ""; position: absolute; left: calc(-2.4rem - 1px); top: 1.5rem; bottom: 0.15rem;
+      width: 2px; background: var(--teal); opacity: 0.6;
+    }
+    .flow h3 { margin-bottom: 0.4rem; }
+    .flow p { margin: 0; color: var(--ink-soft); }
+
+    /* Results */
+    .lead-stat {
+      margin: 0 0 1.5rem;
+      font-family: var(--font-display); font-weight: 700;
+      font-size: clamp(1.5rem, 2.6vw, 2.1rem); line-height: 1.15; letter-spacing: -0.02em;
+    }
+    .wins { margin: 0; padding: 0; list-style: none; }
+    .wins li { position: relative; padding: 0.9rem 0 0.9rem 2rem; border-top: 1px solid var(--line); }
+    .wins li::before {
+      content: ""; position: absolute; left: 0; top: 1.3rem;
+      width: 0.9rem; height: 0.5rem;
+      border-left: 2px solid var(--teal-strong); border-bottom: 2px solid var(--teal-strong);
+      transform: rotate(-45deg);
+    }
+
+    .results { margin-top: clamp(3rem, 6vw, 5rem); }
+    .result {
+      display: grid;
+      grid-template-columns: minmax(0, 4fr) minmax(0, 8fr);
+      gap: clamp(1.5rem, 5vw, 4rem);
+      padding: clamp(2rem, 4vw, 3rem) 0;
+      border-top: 1px solid var(--line);
+    }
+    .result h3 { margin-bottom: 0.75rem; }
+    .result p { color: var(--ink-soft); }
+    .result .shot + .table-scroll { margin-top: 1.5rem; }
+
+    .table-scroll { overflow-x: auto; }
+    .compare { width: 100%; border-collapse: collapse; font-size: 0.95rem; line-height: 1.4; }
+    .compare caption { padding-bottom: 0.6rem; text-align: left; font-size: 0.9rem; color: var(--ink-soft); }
+    .compare th, .compare td { padding: 0.75rem 0.75rem 0.75rem 0; text-align: left; border-top: 1px solid var(--line); }
+    .compare thead th { font-family: var(--font-display); font-weight: 600; font-size: 0.9rem; color: var(--ink-soft); border-top: 2px solid var(--ink); }
+    .compare tbody th { font-family: var(--font-display); font-weight: 600; }
+    .compare td:last-child { font-weight: 600; color: var(--teal-strong); }
+    .table-note { margin: 0.6rem 0 0; font-size: 0.85rem; color: var(--ink-soft); }
+
+    .closing { margin-top: clamp(2rem, 4vw, 3rem); padding-top: 1.5rem; border-top: 2px solid var(--ink); }
+    .closing p { margin: 0; font-size: 1.15rem; max-width: 62ch; }
+
+    /* Call to action and footer */
+    .cta { background: var(--ink); color: #fff; padding: clamp(3.5rem, 8vw, 6rem) 0; }
+    .cta h2 { max-width: 20ch; font-size: clamp(2rem, 4.6vw, 3.6rem); font-weight: 800; letter-spacing: -0.03em; }
+    .cta p { margin: 1.25rem 0 2rem; color: rgba(255, 255, 255, 0.82); }
+    .foot {
+      background: var(--ink); color: rgba(255, 255, 255, 0.68);
+      border-top: 1px solid rgba(255, 255, 255, 0.12);
+      padding: 1.5rem 0; font-size: 0.9rem;
+    }
+    .foot .wrap { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 0.5rem 2rem; }
+    .foot a { color: #fff; }
+
+    /* ------------------------------------------------------------------
+       Responsive
+       ------------------------------------------------------------------ */
+    @media (max-width: 900px) {
+      .site nav { display: none; }
+      .site .bar { justify-content: space-between; }
+      .split, .overview, .snapshot, .statement, .result { grid-template-columns: minmax(0, 1fr); }
+      .split-head { position: static; }
+      .overview figure img { aspect-ratio: 16 / 10; object-position: 60% 50%; }
+      .stats { grid-template-columns: repeat(2, 1fr); row-gap: 2rem; }
+      .stats > div:nth-child(odd) { padding-left: 0; border-left: 0; }
+      .statement p:last-child { align-self: start; }
+    }
+    @media (max-width: 520px) {
+      .hero-shot { padding: 0.4rem 0.4rem 0; }
+      .flow { padding-left: 2.5rem; }
+      .flow li::before { left: -2.45rem; }
+      .flow li:not(:last-child)::after { left: calc(-1.9rem - 1px); }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      .hero-shot img { animation: none; }
+      .btn { transition: none; }
+    }
+  </style>
+</head>
+
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <header class="site">
+    <div class="wrap bar">
+      <a class="brand" href="https://polasahmed.com/">polasahmed.com</a>
+      <nav aria-label="Case study sections">
+        <a href="#overview">Overview</a>
+        <a href="#challenges">Challenges</a>
+        <a href="#approach">Approach</a>
+        <a href="#results">Results</a>
+      </nav>
+      <!-- TODO: point the "Get in touch" links (header, hero, bottom CTA) at your real contact page -->
+      <a class="btn btn--sm" href="https://polasahmed.com/contact/">Get in touch</a>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- HERO -->
+    <section class="hero" aria-labelledby="page-title">
+      <div class="wrap">
+        <h1 id="page-title">
+          <span class="h1-main">From Zero to 21K+ Clicks:</span>
+          <span class="h1-sub">How IV Better Dominated Liquid IV Search Queries</span>
+        </h1>
+        <p class="lede">IV Better already had an online presence, but its organic potential was untapped. Strategic SEO optimization and intent-driven content took the brand to 2.57M impressions and 21.2K organic clicks from Google.</p>
+        <p class="actions">
+          <a class="btn" href="https://polasahmed.com/contact/">Get in touch</a>
+          <a class="link-light" href="#results">See the results</a>
+        </p>
+
+        <figure class="hero-shot">
+          <img src="images/iv-better-organic-growth-21k-clicks.webp" width="1750" height="1000"
+               fetchpriority="high"
+               alt="Google Search Console performance chart for IV Better showing 21.2K total clicks and 2.57M total impressions, with daily clicks climbing from near zero to more than 100.">
+          <figcaption>Google Search Console, one-year view: 21.2K clicks and 2.57M impressions. Daily clicks climbed from near zero to more than 100 at peak.</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- HEADLINE NUMBERS -->
+    <section class="ledger" aria-label="Headline results">
+      <div class="wrap">
+        <dl class="stats">
+          <div>
+            <dt>Impressions in Google Search in one year</dt>
+            <dd>2.57M</dd>
+          </div>
+          <div>
+            <dt>Organic clicks from Google</dt>
+            <dd>21.2K</dd>
+          </div>
+          <div>
+            <dt>Impressions in a 3-month period, up from 161K a year earlier</dt>
+            <dd>794K</dd>
+          </div>
+          <div>
+            <dt>Average position over 3 months, improved from 16.2 a year earlier</dt>
+            <dd>8</dd>
+          </div>
+        </dl>
+      </div>
+    </section>
+
+    <!-- OVERVIEW -->
+    <section class="section section--saline section--flush-top" id="overview" aria-labelledby="overview-title">
+      <div class="wrap">
+        <div class="overview">
+          <div>
+            <h2 id="overview-title">Untapped potential in a competitive health market</h2>
+            <p>IV Better is a mobile IV therapy provider. It already had a website and an audience, but high-volume health queries were not performing at their maximum level.</p>
+            <p>Through strategic SEO optimization and intent-driven content improvements, we helped the brand capture top search positions for key hydration and safety-related queries, generating 2.57M impressions and 21K+ organic clicks.</p>
+          </div>
+          <figure>
+            <img src="images/iv-better-iv-therapy-visual.webp" width="1750" height="1000" loading="lazy" decoding="async"
+                 alt="An IV drip bag filled with slices of orange, kiwi, apple and berries, held by a gloved medical professional.">
+          </figure>
+        </div>
+
+        <div class="snapshot">
+          <figure class="shot">
+            <a href="images/iv-better-website-homepage.webp" target="_blank" rel="noopener" aria-label="Open the full-size IV Better homepage screenshot">
+              <img src="images/iv-better-website-homepage.webp" width="1839" height="870" loading="lazy" decoding="async"
+                   alt="IV Better homepage reading Welcome to IV Better, Mobile IV Therapy and Medical Services Delivered To You, with Texas and California location buttons.">
+            </a>
+            <figcaption>The IV Better homepage: mobile IV therapy and medical services, with location selection for Texas and California.</figcaption>
+          </figure>
+          <dl>
+            <div><dt>Client</dt><dd>IV Better Hydration &amp; Wellness</dd></div>
+            <div><dt>Business</dt><dd>Mobile IV therapy and medical services delivered to the customer</dd></div>
+            <div><dt>Locations</dt><dd>Texas and California</dd></div>
+            <div><dt>Channel</dt><dd>Google organic search</dd></div>
+            <div><dt>Work delivered</dt><dd>Service and location pages, search-intent content, E-E-A-T, CTR optimization, link building</dd></div>
+            <div><dt>Results window</dt><dd>One year</dd></div>
+          </dl>
+        </div>
+      </div>
+    </section>
+
+    <!-- CHALLENGES -->
+    <section class="section" id="challenges" aria-labelledby="challenges-title">
+      <div class="wrap">
+        <div class="split">
+          <div class="split-head">
+            <h2 id="challenges-title">What was holding organic growth back</h2>
+            <p>When we analyzed IV Better’s website and search data, we found five opportunities that kept the brand from reaching its full organic potential.</p>
+          </div>
+          <ul class="issues">
+            <li>
+              <h3>High-volume health queries were underused</h3>
+              <p>Searches about hydration safety, IV usage for kids, and daily intake limits were generating impressions, but the content wasn’t optimized to dominate those topics.</p>
+            </li>
+            <li>
+              <h3>E-E-A-T signals weren’t maximized</h3>
+              <p>As a medical service brand, IV Better needed stronger authority signals to compete in sensitive health results: structured medical content, expertise positioning and trust reinforcement.</p>
+            </li>
+            <li>
+              <h3>Content didn’t match search intent</h3>
+              <p>Many visitors were asking safety and educational questions, but the content structure didn’t align with Google’s preference for clear, direct, medically structured answers.</p>
+            </li>
+            <li>
+              <h3>Topical clusters were thin</h3>
+              <p>Core services like IV hydration, medical infusions and wellness injections weren’t supported by interconnected articles that build topical authority.</p>
+            </li>
+            <li>
+              <h3>Click-through rates had room to improve</h3>
+              <p>Despite strong impression numbers, click-through rates could improve with better headline structure and search-focused meta optimization.</p>
+            </li>
+          </ul>
+        </div>
+
+        <div class="statement">
+          <p class="big">The demand was already there.</p>
+          <p>Thousands of people were searching for these hydration and safety questions every month. The real issue was that IV Better wasn’t yet positioned to capture and dominate that demand at scale.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- APPROACH -->
+    <section class="section section--saline" id="approach" aria-labelledby="approach-title">
+      <div class="wrap">
+        <div class="split">
+          <div class="split-head">
+            <h2 id="approach-title">How we captured that demand</h2>
+            <p>Five workstreams to capture high-value search traffic and build lasting visibility in the hydration and wellness space.</p>
+          </div>
+          <ul class="flow">
+            <li>
+              <h3>Service and location pages</h3>
+              <p>We created a dedicated page for each core service (IV hydration, medical infusions and wellness injections) and an individual page for each location, for strong local visibility.</p>
+            </li>
+            <li>
+              <h3>Content built around search intent</h3>
+              <p>We optimized existing content and added new articles targeting high-volume health queries, safety concerns and educational topics, matching what users were actively searching for.</p>
+            </li>
+            <li>
+              <h3>E-E-A-T and authority signals</h3>
+              <p>We strengthened expertise, authoritativeness and trust by structuring medical content clearly, highlighting professional credentials and adding trust-focused site elements.</p>
+            </li>
+            <li>
+              <h3>Meta and CTR optimization</h3>
+              <p>We improved headlines, meta descriptions and on-page structure to increase click-through rates on high-impression queries.</p>
+            </li>
+            <li>
+              <h3>Local credibility and topical authority</h3>
+              <p>We built backlinks from relevant, reputable sources and interlinked related content to strengthen the site’s topical authority in wellness and IV therapy.</p>
+            </li>
+          </ul>
+        </div>
+        <div class="closing"><p>We didn’t promise overnight rankings. We built a strong SEO foundation and helped IV Better grow steadily and sustainably.</p></div>
+      </div>
+    </section>
+
+    <!-- RESULTS -->
+    <section class="section" id="results" aria-labelledby="results-title">
+      <div class="wrap">
+        <div class="split">
+          <div class="split-head">
+            <h2 id="results-title">The results</h2>
+          </div>
+          <div>
+            <p class="lead-stat">Found on Google 2.57 million+ times in one year.</p>
+            <p>After implementing a structured SEO strategy, IV Better saw strong and measurable growth in Google organic search.</p>
+            <ul class="wins">
+              <li>2.57M impressions and 21.2K organic clicks from Google</li>
+              <li>Significant growth in high-intent hydration and wellness search queries</li>
+              <li>Strong visibility across service and location-based searches</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="results">
+          <article class="result">
+            <div>
+              <h3>Three months against the same period a year earlier</h3>
+              <p>In the 3-month comparison, clicks grew from 731 to 5.32K and impressions from 161K to 794K. Average position improved from 16.2 to 8, and average CTR rose from 0.5% to 0.7%.</p>
+            </div>
+            <div>
+              <figure class="shot">
+                <a href="images/iv-better-3-months-vs-last-year.webp" target="_blank" rel="noopener" aria-label="Open the full-size three-month comparison screenshot">
+                  <img src="images/iv-better-3-months-vs-last-year.webp" width="1005" height="540" loading="lazy" decoding="async"
+                       alt="Google Search Console comparison of a 3-month period with the same period a year earlier: clicks 5.32K versus 731, impressions 794K versus 161K, average CTR 0.7% versus 0.5%, average position 8 versus 16.2.">
+                </a>
+                <figcaption>Google Search Console: a 3-month period (solid lines) against the same period a year earlier (dashed lines).</figcaption>
+              </figure>
+              <div class="table-scroll">
+                <table class="compare">
+                  <caption>3-month period compared with the same period a year earlier</caption>
+                  <thead>
+                    <tr>
+                      <th scope="col">Metric</th>
+                      <th scope="col">Year earlier</th>
+                      <th scope="col">3-month period</th>
+                      <th scope="col">Change</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr><th scope="row">Clicks</th><td>731</td><td>5.32K</td><td>+628%</td></tr>
+                    <tr><th scope="row">Impressions</th><td>161K</td><td>794K</td><td>+393%</td></tr>
+                    <tr><th scope="row">Average CTR</th><td>0.5%</td><td>0.7%</td><td>+0.2 points</td></tr>
+                    <tr><th scope="row">Average position</th><td>16.2</td><td>8</td><td>8.2 positions higher</td></tr>
+                  </tbody>
+                </table>
+              </div>
+              <p class="table-note">Percentage changes are calculated from the rounded figures shown in Search Console.</p>
+            </div>
+          </article>
+
+          <article class="result">
+            <div>
+              <h3>Search Console Insights</h3>
+              <p>Google’s own Insights view for a 3-month period shows 5.45K clicks, up 35%, and 827K impressions, up 52%.</p>
+            </div>
+            <figure class="shot">
+              <a href="images/iv-better-search-insights-3-months.webp" target="_blank" rel="noopener" aria-label="Open the full-size Search Console Insights screenshot">
+                <img src="images/iv-better-search-insights-3-months.webp" width="1353" height="345" loading="lazy" decoding="async"
+                     alt="Google Search Console Insights for a 3-month period: 5.45K clicks, up 35 percent, and 827K impressions, up 52 percent.">
+              </a>
+              <figcaption>Search Console Insights, 3-month view.</figcaption>
+            </figure>
+          </article>
+
+          <article class="result">
+            <div>
+              <h3>The longer view: 16 months of search data</h3>
+              <p>Over 16 months, web search recorded 24.6K clicks and 3.61M impressions, at an average CTR of 0.7% and an average position of 10.</p>
+            </div>
+            <figure class="shot">
+              <a href="images/iv-better-16-month-performance.webp" target="_blank" rel="noopener" aria-label="Open the full-size 16-month performance screenshot">
+                <img src="images/iv-better-16-month-performance.webp" width="1474" height="633" loading="lazy" decoding="async"
+                     alt="Google Search Console 16-month web search performance chart: 24.6K total clicks, 3.61M total impressions, average CTR 0.7 percent, average position 10.">
+              </a>
+              <figcaption>Google Search Console, 16-month view, search type: Web.</figcaption>
+            </figure>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta" aria-labelledby="cta-title">
+      <div class="wrap">
+        <h2 id="cta-title">Ready to capture the search demand your business already has?</h2>
+        <p>Get in touch to talk about your website, your market and your organic growth goals.</p>
+        <a class="btn" href="https://polasahmed.com/contact/">Get in touch</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="foot">
+    <div class="wrap">
+      <span>&copy; 2026 <a href="https://polasahmed.com/">polasahmed.com</a></span>
+      <span>All figures come from Google Search Console.</span>
+    </div>
+  </footer>
+</body>
+</html>
