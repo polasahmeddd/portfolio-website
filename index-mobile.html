@@ -1,0 +1,965 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>SEO & AEO Skills | Portfolio</title>
+  <meta
+    name="description"
+    content="SEO, AEO, technical SEO, content optimization, analytics and AI search skills."
+  />
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Inter, Arial, Helvetica, sans-serif;
+      background: #f8fafc;
+      color: #64748b;
+      line-height: 1.7;
+    }
+
+    a {
+      text-decoration: none;
+    }
+
+    .container {
+      width: min(1180px, 90%);
+      margin: auto;
+    }
+
+    .section {
+      padding: 90px 0;
+    }
+
+    .section-title {
+      max-width: 720px;
+      margin-bottom: 45px;
+    }
+
+    .section-label {
+      display: inline-block;
+      color: #2563eb;
+      font-size: 14px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin-bottom: 10px;
+    }
+
+    .section-title h2 {
+      color: #0f172a;
+      font-size: 40px;
+      line-height: 1.2;
+      margin-bottom: 15px;
+    }
+
+    .section-title p {
+      font-size: 17px;
+    }
+
+    .navbar {
+      background: rgba(255, 255, 255, 0.95);
+      border-bottom: 1px solid #e2e8f0;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      backdrop-filter: blur(10px);
+    }
+
+    .nav-wrapper {
+      height: 72px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .logo {
+      display: inline-flex;
+      align-items: center;
+    }
+
+    .logo img {
+      height: 34px;
+      width: auto;
+      display: block;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 30px;
+      list-style: none;
+    }
+
+    .nav-links a {
+      color: #475569;
+      font-size: 15px;
+      font-weight: 600;
+      transition: 0.25s;
+    }
+
+    .nav-links a:hover,
+    .nav-links a.active {
+      color: #2563eb;
+    }
+
+    .hero {
+      padding: 110px 0 90px;
+      background:
+        radial-gradient(circle at top right, #dbeafe 0, transparent 35%),
+        #f8fafc;
+    }
+
+    .hero-content {
+      max-width: 850px;
+    }
+
+    .hero-tag {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 8px 14px;
+      background: #eff6ff;
+      border: 1px solid #bfdbfe;
+      border-radius: 100px;
+      color: #2563eb;
+      font-size: 14px;
+      font-weight: 700;
+      margin-bottom: 25px;
+    }
+
+    .hero h1 {
+      color: #0f172a;
+      font-size: clamp(44px, 7vw, 76px);
+      line-height: 1.04;
+      letter-spacing: -2.5px;
+      margin-bottom: 25px;
+    }
+
+    .hero h1 span {
+      color: #2563eb;
+    }
+
+    .hero p {
+      max-width: 740px;
+      font-size: 19px;
+      margin-bottom: 35px;
+    }
+
+    .hero-badges {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    .hero-badge {
+      background: #fff;
+      border: 1px solid #e2e8f0;
+      border-radius: 12px;
+      padding: 10px 16px;
+      color: #0f172a;
+      font-size: 14px;
+      font-weight: 700;
+      box-shadow: 0 5px 20px rgba(15, 23, 42, 0.04);
+    }
+
+    .skills-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 22px;
+    }
+
+    .skill-card {
+      background: #fff;
+      border: 1px solid #e2e8f0;
+      border-radius: 18px;
+      padding: 30px;
+      transition: 0.3s ease;
+    }
+
+    .skill-card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 18px 50px rgba(15, 23, 42, 0.09);
+      border-color: #bfdbfe;
+    }
+
+    .skill-icon {
+      width: 48px;
+      height: 48px;
+      border-radius: 13px;
+      background: #eff6ff;
+      color: #2563eb;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 800;
+      font-size: 18px;
+      margin-bottom: 22px;
+    }
+
+    .skill-card h3 {
+      color: #0f172a;
+      font-size: 21px;
+      margin-bottom: 10px;
+    }
+
+    .skill-card p {
+      font-size: 15px;
+      margin-bottom: 18px;
+    }
+
+    .skill-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 9px;
+    }
+
+    .skill-list li {
+      font-size: 14px;
+      color: #475569;
+    }
+
+    .skill-list li::before {
+      content: "✓";
+      color: #10b981;
+      font-weight: 800;
+      margin-right: 9px;
+    }
+
+    .aeo-section {
+      background: #0f172a;
+    }
+
+    .aeo-section .section-label {
+      color: #60a5fa;
+    }
+
+    .aeo-section .section-title h2 {
+      color: #fff;
+    }
+
+    .aeo-section .section-title p {
+      color: #94a3b8;
+    }
+
+    .aeo-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 18px;
+    }
+
+    .aeo-card {
+      background: #172033;
+      border: 1px solid #26344d;
+      border-radius: 16px;
+      padding: 25px;
+    }
+
+    .aeo-card .number {
+      font-size: 13px;
+      color: #60a5fa;
+      font-weight: 800;
+      margin-bottom: 18px;
+    }
+
+    .aeo-card h3 {
+      color: #fff;
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
+
+    .aeo-card p {
+      color: #94a3b8;
+      font-size: 14px;
+    }
+
+    .tag-wrapper {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    .tag {
+      padding: 11px 16px;
+      background: #fff;
+      border: 1px solid #e2e8f0;
+      border-radius: 100px;
+      color: #334155;
+      font-size: 14px;
+      font-weight: 600;
+      transition: 0.2s;
+    }
+
+    .tag:hover {
+      border-color: #2563eb;
+      color: #2563eb;
+    }
+
+    .tools-section {
+      background: #fff;
+    }
+
+    .tools-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+    }
+
+    .tool-group {
+      border: 1px solid #e2e8f0;
+      border-radius: 18px;
+      padding: 28px;
+      background: #f8fafc;
+    }
+
+    .tool-group h3 {
+      color: #0f172a;
+      font-size: 20px;
+      margin-bottom: 20px;
+    }
+
+    .tool-items {
+      display: grid;
+      gap: 12px;
+    }
+
+    .tool-item {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background: #fff;
+      border: 1px solid #e2e8f0;
+      border-radius: 10px;
+      padding: 12px 14px;
+      color: #475569;
+      font-size: 14px;
+      font-weight: 600;
+    }
+
+    .tool-dot {
+      width: 8px;
+      height: 8px;
+      background: #10b981;
+      border-radius: 50%;
+    }
+
+    .workflow {
+      display: grid;
+      grid-template-columns: repeat(6, 1fr);
+      gap: 12px;
+    }
+
+    .workflow-step {
+      background: #fff;
+      border: 1px solid #e2e8f0;
+      border-radius: 14px;
+      padding: 24px 17px;
+      text-align: center;
+    }
+
+    .workflow-step span {
+      display: block;
+      color: #2563eb;
+      font-weight: 800;
+      font-size: 13px;
+      margin-bottom: 7px;
+    }
+
+    .workflow-step strong {
+      color: #0f172a;
+      font-size: 15px;
+    }
+
+    .process-description {
+      max-width: 780px;
+      margin-top: 30px;
+      font-size: 16px;
+    }
+
+    .proof-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 22px;
+    }
+
+    .proof-card {
+      background: #fff;
+      border: 1px solid #e2e8f0;
+      border-radius: 16px;
+      padding: 28px;
+    }
+
+    .proof-card h3 {
+      color: #0f172a;
+      margin-bottom: 10px;
+      font-size: 19px;
+    }
+
+    .proof-card p {
+      font-size: 15px;
+    }
+
+    .proof-line {
+      width: 42px;
+      height: 4px;
+      background: #10b981;
+      border-radius: 10px;
+      margin-bottom: 20px;
+    }
+
+    .cta-wrapper {
+      background: #2563eb;
+      border-radius: 24px;
+      padding: 65px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 30px;
+    }
+
+    .cta-content {
+      max-width: 670px;
+    }
+
+    .cta-content h2 {
+      color: #fff;
+      font-size: 38px;
+      margin-bottom: 10px;
+    }
+
+    .cta-content p {
+      color: #dbeafe;
+      font-size: 17px;
+    }
+
+    .cta-buttons {
+      display: flex;
+      gap: 12px;
+      flex-shrink: 0;
+    }
+
+    .btn {
+      padding: 13px 21px;
+      border-radius: 9px;
+      font-weight: 700;
+      font-size: 14px;
+      transition: 0.25s;
+    }
+
+    .btn-light {
+      background: #fff;
+      color: #2563eb;
+    }
+
+    .btn-light:hover {
+      background: #eff6ff;
+    }
+
+    .btn-outline {
+      border: 1px solid rgba(255, 255, 255, 0.45);
+      color: #fff;
+    }
+
+    .btn-outline:hover {
+      background: rgba(255, 255, 255, 0.1);
+    }
+
+    footer {
+      padding: 35px 0;
+      text-align: center;
+      font-size: 14px;
+      color: #94a3b8;
+    }
+
+    @media (max-width: 1000px) {
+      .container { width: min(92%, 760px); }
+      .nav-links { gap: 20px; }
+      .hero { padding: 90px 0 75px; }
+      .hero h1 { font-size: clamp(42px, 7vw, 62px); }
+      .skills-grid, .tools-grid, .proof-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+      .aeo-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+      .workflow { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+      .cta-wrapper { padding: 48px; flex-direction: column; align-items: flex-start; }
+    }
+
+    @media (max-width: 760px) {
+      .container { width: min(100% - 32px, 620px); }
+      .section { padding: 58px 0; }
+      .section-title { margin-bottom: 30px; }
+      .section-title h2 { font-size: clamp(28px, 7vw, 36px); line-height: 1.18; }
+      .section-title p { font-size: 15px; line-height: 1.65; }
+      .nav-wrapper { height: 64px; position: relative; }
+      .logo img { height: 29px; max-width: 170px; }
+      .nav-links { display: none; position: absolute; top: calc(100% + 1px); left: 0; right: 0; z-index: 10; flex-direction: column; align-items: stretch; gap: 0; padding: 8px 16px 14px; background: rgba(255,255,255,.98); border-bottom: 1px solid #e2e8f0; box-shadow: 0 14px 30px rgba(15,23,42,.08); }
+      .nav-links.mobile-open { display: flex; }
+      .nav-links li a { display: block; padding: 13px 10px; border-radius: 8px; }
+      .nav-links li a:hover, .nav-links li a.active { background: #eff6ff; }
+      .nav-wrapper::after { content: "☰"; display: flex; align-items: center; justify-content: center; position: absolute; right: 0; top: 50%; transform: translateY(-50%); width: 42px; height: 40px; border: 1px solid #e2e8f0; border-radius: 9px; color: #0f172a; font-size: 22px; cursor: pointer; }
+      .hero { padding: 68px 0 58px; overflow: hidden; }
+      .hero-content { max-width: 100%; }
+      .hero-tag { padding: 7px 12px; font-size: 12px; margin-bottom: 18px; }
+      .hero h1 { font-size: clamp(38px, 11vw, 54px); line-height: 1.04; letter-spacing: -1.8px; margin-bottom: 20px; overflow-wrap: anywhere; }
+      .hero p { font-size: 16px; line-height: 1.7; margin-bottom: 25px; }
+      .hero-badges { gap: 8px; }
+      .hero-badge { padding: 8px 12px; font-size: 12px; border-radius: 9px; }
+      .skills-grid, .aeo-grid, .tools-grid, .workflow, .proof-grid { grid-template-columns: 1fr; gap: 14px; }
+      .skill-card, .aeo-card, .tool-group, .proof-card { padding: 22px; border-radius: 14px; }
+      .skill-icon { width: 43px; height: 43px; margin-bottom: 17px; }
+      .skill-card h3, .tool-group h3 { font-size: 19px; }
+      .skill-card p, .proof-card p { font-size: 14px; }
+      .skill-list { gap: 7px; }
+      .skill-list li { font-size: 13px; }
+      .aeo-card h3 { font-size: 17px; }
+      .aeo-card p { font-size: 13px; }
+      .tag-wrapper { gap: 8px; }
+      .tag { padding: 9px 12px; font-size: 12px; }
+      .tool-group h3 { margin-bottom: 15px; }
+      .tool-item { padding: 11px 12px; font-size: 13px; }
+      .workflow { gap: 10px; }
+      .workflow-step { padding: 18px 14px; }
+      .workflow-step strong { font-size: 14px; }
+      .process-description { margin-top: 22px; font-size: 14px; }
+      .cta-wrapper { padding: 30px 22px; border-radius: 18px; gap: 24px; }
+      .cta-content { max-width: 100%; }
+      .cta-content h2 { font-size: clamp(27px, 7vw, 34px); line-height: 1.2; }
+      .cta-content p { font-size: 15px; line-height: 1.65; }
+      .cta-buttons { width: 100%; flex-direction: column; gap: 10px; }
+      .cta-buttons .btn { width: 100%; text-align: center; }
+      .btn { padding: 12px 16px; }
+      footer { padding: 28px 0; font-size: 12px; }
+    }
+
+    @media (max-width: 420px) {
+      .container { width: min(100% - 24px, 390px); }
+      .nav-wrapper { height: 60px; }
+      .logo img { height: 26px; max-width: 145px; }
+      .hero { padding: 55px 0 48px; }
+      .hero h1 { font-size: 37px; letter-spacing: -1.3px; }
+      .hero p { font-size: 15px; }
+      .hero-badges { display: grid; grid-template-columns: 1fr 1fr; }
+      .hero-badge { text-align: center; }
+      .section { padding: 48px 0; }
+      .section-title h2 { font-size: 27px; }
+      .skill-card, .aeo-card, .tool-group, .proof-card { padding: 19px; }
+      .cta-wrapper { padding: 25px 18px; }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      *, *::before, *::after { transition: none !important; }
+    }
+  </style>
+</head>
+
+<body>
+
+  <nav class="navbar">
+    <div class="container nav-wrapper">
+      <a href="index.html" class="logo"><img src="data:image/png;base64,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" alt="Polas Ahmed logo"></a>
+
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="skills.html" class="active">Skills</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <section class="hero">
+    <div class="container hero-content">
+      <div class="hero-tag">Skills & Expertise</div>
+
+      <h1>SEO, AEO & <span>Organic Growth</span> Capabilities</h1>
+
+      <p>
+        I combine technical SEO, content strategy, search analytics,
+        semantic optimization and Answer Engine Optimization to help
+        websites improve visibility across traditional search engines
+        and AI-powered search experiences.
+      </p>
+
+      <div class="hero-badges">
+        <div class="hero-badge">Technical SEO</div>
+        <div class="hero-badge">AEO & GEO</div>
+        <div class="hero-badge">SEO Strategy</div>
+        <div class="hero-badge">Analytics</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="section-title">
+        <span class="section-label">Core Expertise</span>
+        <h2>Skills that drive search visibility and sustainable growth</h2>
+        <p>
+          My SEO work covers research, technical optimization, content,
+          AI search visibility and performance measurement.
+        </p>
+      </div>
+
+      <div class="skills-grid">
+        <div class="skill-card">
+          <div class="skill-icon">01</div>
+          <h3>SEO Strategy</h3>
+          <p>
+            Building data-driven SEO strategies based on search demand,
+            competition and business goals.
+          </p>
+          <ul class="skill-list">
+            <li>Keyword Research</li>
+            <li>Search Intent Analysis</li>
+            <li>Competitor Research</li>
+            <li>Content Gap Analysis</li>
+            <li>Keyword Clustering</li>
+            <li>SEO Roadmaps</li>
+          </ul>
+        </div>
+
+        <div class="skill-card">
+          <div class="skill-icon">02</div>
+          <h3>Technical SEO</h3>
+          <p>
+            Finding and fixing technical issues that affect crawling,
+            indexing, website performance and organic visibility.
+          </p>
+          <ul class="skill-list">
+            <li>Crawling & Indexing</li>
+            <li>XML Sitemaps</li>
+            <li>Robots.txt</li>
+            <li>Canonicalization</li>
+            <li>301 Redirects & 404 Errors</li>
+            <li>Core Web Vitals</li>
+          </ul>
+        </div>
+
+        <div class="skill-card">
+          <div class="skill-icon">03</div>
+          <h3>AEO & GEO</h3>
+          <p>
+            Structuring content for better visibility across AI-powered
+            search engines and answer platforms.
+          </p>
+          <ul class="skill-list">
+            <li>Answer Engine Optimization</li>
+            <li>Generative Engine Optimization</li>
+            <li>AI Search Optimization</li>
+            <li>Direct Answer Optimization</li>
+            <li>AI Citation Analysis</li>
+            <li>Conversational Search</li>
+          </ul>
+        </div>
+
+        <div class="skill-card">
+          <div class="skill-icon">04</div>
+          <h3>Content & On-Page SEO</h3>
+          <p>
+            Optimizing content structure and relevance around search
+            intent while improving usability and internal discovery.
+          </p>
+          <ul class="skill-list">
+            <li>Content Optimization</li>
+            <li>On-Page SEO</li>
+            <li>Internal Linking</li>
+            <li>Heading Structure</li>
+            <li>Content Refresh</li>
+            <li>Featured Snippet Optimization</li>
+          </ul>
+        </div>
+
+        <div class="skill-card">
+          <div class="skill-icon">05</div>
+          <h3>Semantic & Entity SEO</h3>
+          <p>
+            Helping search engines understand content, topics and entity
+            relationships more clearly.
+          </p>
+          <ul class="skill-list">
+            <li>Semantic SEO</li>
+            <li>Entity Optimization</li>
+            <li>Topical Authority</li>
+            <li>Schema Markup</li>
+            <li>JSON-LD</li>
+            <li>Content Architecture</li>
+          </ul>
+        </div>
+
+        <div class="skill-card">
+          <div class="skill-icon">06</div>
+          <h3>Analytics & Reporting</h3>
+          <p>
+            Turning search data into clear SEO decisions, measurable
+            KPIs and growth opportunities.
+          </p>
+          <ul class="skill-list">
+            <li>Google Search Console</li>
+            <li>Google Analytics 4</li>
+            <li>CTR Analysis</li>
+            <li>Ranking Analysis</li>
+            <li>Conversion Tracking</li>
+            <li>SEO Reporting</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section aeo-section">
+    <div class="container">
+      <div class="section-title">
+        <span class="section-label">AI Search Expertise</span>
+        <h2>Optimizing beyond traditional search</h2>
+        <p>
+          Search is changing. My approach combines traditional SEO with
+          structured content strategies designed for AI-powered search
+          and answer engines.
+        </p>
+      </div>
+
+      <div class="aeo-grid">
+        <div class="aeo-card">
+          <div class="number">01</div>
+          <h3>Answer Engine Optimization</h3>
+          <p>
+            Creating clear and structured content designed to answer
+            user questions quickly and accurately.
+          </p>
+        </div>
+
+        <div class="aeo-card">
+          <div class="number">02</div>
+          <h3>Generative Engine Optimization</h3>
+          <p>
+            Structuring content, entities and authority signals for
+            generative search environments.
+          </p>
+        </div>
+
+        <div class="aeo-card">
+          <div class="number">03</div>
+          <h3>AI Search Visibility</h3>
+          <p>
+            Monitoring brand mentions, content references and visibility
+            across AI-driven search experiences.
+          </p>
+        </div>
+
+        <div class="aeo-card">
+          <div class="number">04</div>
+          <h3>Structured Answers</h3>
+          <p>
+            Using concise answers, logical headings and supporting
+            context that search systems can easily understand.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="section-title">
+        <span class="section-label">Technical Knowledge</span>
+        <h2>SEO technical skills</h2>
+        <p>
+          Technical areas I work with when auditing and optimizing websites.
+        </p>
+      </div>
+
+      <div class="tag-wrapper">
+        <span class="tag">Crawling</span>
+        <span class="tag">Indexing</span>
+        <span class="tag">Canonical Tags</span>
+        <span class="tag">301 Redirects</span>
+        <span class="tag">404 Errors</span>
+        <span class="tag">5xx Errors</span>
+        <span class="tag">XML Sitemaps</span>
+        <span class="tag">Robots.txt</span>
+        <span class="tag">Schema Markup</span>
+        <span class="tag">JSON-LD</span>
+        <span class="tag">Core Web Vitals</span>
+        <span class="tag">Page Speed</span>
+        <span class="tag">Internal Linking</span>
+        <span class="tag">Site Architecture</span>
+        <span class="tag">Mobile SEO</span>
+        <span class="tag">International SEO</span>
+        <span class="tag">JavaScript SEO</span>
+        <span class="tag">HTTP Status Codes</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="section tools-section">
+    <div class="container">
+      <div class="section-title">
+        <span class="section-label">Tools & Platforms</span>
+        <h2>Tools I use for SEO analysis and optimization</h2>
+        <p>
+          A selection of platforms I use for research, audits,
+          measurement and website optimization.
+        </p>
+      </div>
+
+      <div class="tools-grid">
+        <div class="tool-group">
+          <h3>Search & Analytics</h3>
+          <div class="tool-items">
+            <div class="tool-item">Google Search Console <span class="tool-dot"></span></div>
+            <div class="tool-item">Google Analytics 4 <span class="tool-dot"></span></div>
+            <div class="tool-item">Google Tag Manager <span class="tool-dot"></span></div>
+            <div class="tool-item">Bing Webmaster Tools <span class="tool-dot"></span></div>
+            <div class="tool-item">Microsoft Clarity <span class="tool-dot"></span></div>
+          </div>
+        </div>
+
+        <div class="tool-group">
+          <h3>SEO Research & Auditing</h3>
+          <div class="tool-items">
+            <div class="tool-item">Ahrefs <span class="tool-dot"></span></div>
+            <div class="tool-item">Semrush <span class="tool-dot"></span></div>
+            <div class="tool-item">Screaming Frog <span class="tool-dot"></span></div>
+            <div class="tool-item">PageSpeed Insights <span class="tool-dot"></span></div>
+            <div class="tool-item">Google Trends <span class="tool-dot"></span></div>
+          </div>
+        </div>
+
+        <div class="tool-group">
+          <h3>CMS & Web</h3>
+          <div class="tool-items">
+            <div class="tool-item">WordPress <span class="tool-dot"></span></div>
+            <div class="tool-item">Rank Math <span class="tool-dot"></span></div>
+            <div class="tool-item">Yoast SEO <span class="tool-dot"></span></div>
+            <div class="tool-item">HTML & CSS <span class="tool-dot"></span></div>
+            <div class="tool-item">JSON-LD <span class="tool-dot"></span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="section-title">
+        <span class="section-label">My Process</span>
+        <h2>How I approach SEO projects</h2>
+        <p>
+          A structured workflow helps turn SEO opportunities into
+          measurable improvements.
+        </p>
+      </div>
+
+      <div class="workflow">
+        <div class="workflow-step"><span>01</span><strong>Research</strong></div>
+        <div class="workflow-step"><span>02</span><strong>Audit</strong></div>
+        <div class="workflow-step"><span>03</span><strong>Strategy</strong></div>
+        <div class="workflow-step"><span>04</span><strong>Implement</strong></div>
+        <div class="workflow-step"><span>05</span><strong>Measure</strong></div>
+        <div class="workflow-step"><span>06</span><strong>Improve</strong></div>
+      </div>
+
+      <p class="process-description">
+        I start with search data and technical analysis, identify
+        high-impact opportunities, build a clear strategy, implement
+        improvements and measure results through rankings, visibility,
+        traffic and conversions.
+      </p>
+    </div>
+  </section>
+
+  <section class="section tools-section">
+    <div class="container">
+      <div class="section-title">
+        <span class="section-label">Practical Experience</span>
+        <h2>Skills backed by real SEO work</h2>
+        <p>
+          My skills are applied through practical website optimization,
+          troubleshooting and growth projects.
+        </p>
+      </div>
+
+      <div class="proof-grid">
+        <div class="proof-card">
+          <div class="proof-line"></div>
+          <h3>Technical SEO</h3>
+          <p>
+            Auditing crawling, indexing, redirects, broken URLs,
+            architecture and website performance issues.
+          </p>
+        </div>
+
+        <div class="proof-card">
+          <div class="proof-line"></div>
+          <h3>Content SEO</h3>
+          <p>
+            Building keyword strategies, topic clusters, internal
+            linking structures and optimized landing pages.
+          </p>
+        </div>
+
+        <div class="proof-card">
+          <div class="proof-line"></div>
+          <h3>AEO & Semantic SEO</h3>
+          <p>
+            Structuring content around entities, direct answers,
+            topical relevance and machine-readable information.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="cta-wrapper">
+        <div class="cta-content">
+          <h2>Looking for an SEO & AEO Specialist?</h2>
+          <p>
+            I help businesses improve organic search and AI search
+            visibility through technical SEO, content strategy,
+            analytics and structured optimization.
+          </p>
+        </div>
+
+        <div class="cta-buttons">
+          <a href="projects.html" class="btn btn-light">View My Projects</a>
+          <a href="contact.html" class="btn btn-outline">Contact Me</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      © 2026 Nayeem. SEO & AEO Portfolio.
+    </div>
+  </footer>
+
+  <script>
+    (() => {
+      const wrapper = document.querySelector('.nav-wrapper');
+      const nav = document.querySelector('.nav-links');
+      if (!wrapper || !nav) return;
+      wrapper.addEventListener('click', e => {
+        if (window.innerWidth > 760) return;
+        if (e.target.closest('.nav-links a')) { nav.classList.remove('mobile-open'); return; }
+        const r = wrapper.getBoundingClientRect();
+        if (e.clientX >= r.right - 58) nav.classList.toggle('mobile-open');
+      });
+      window.addEventListener('resize', () => { if (window.innerWidth > 760) nav.classList.remove('mobile-open'); });
+    })();
+  </script>
+
+</body>
+</html>
