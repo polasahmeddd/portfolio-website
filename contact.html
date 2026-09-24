@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact — Polas Ahmed | SEO &amp; AIO Specialist</title>
+<meta name="description" content="Get in touch with Polas Ahmed, an SEO and AI Optimization specialist based in Dhaka, currently looking for full-time remote roles.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --ink:#0F172A;
+    --muted:#5B677A;
+    --paper:#FFFFFF;
+    --accent:#2563EB;
+    --accent-tint:#EFF6FF;
+    --border:#E2E8F0;
+    --field-bg:#F8FAFC;
+  }
+  *{box-sizing:border-box;margin:0;padding:0;}
+  body{font-family:'IBM Plex Sans',sans-serif;color:var(--ink);background:var(--paper);line-height:1.6;-webkit-font-smoothing:antialiased;}
+  h1,.logo{font-family:'Sora',sans-serif;}
+  a{color:inherit;text-decoration:none;}
+  svg{display:block;}
+
+  /* Header */
+  .site-header{border-bottom:1px solid var(--border);}
+  .header-inner{max-width:1120px;margin:0 auto;padding:20px 32px;display:flex;align-items:center;justify-content:space-between;gap:24px;}
+  .logo{font-size:19px;font-weight:700;letter-spacing:-0.01em;}
+  nav.main-nav{display:flex;gap:28px;}
+  nav.main-nav a{font-size:15px;color:var(--muted);transition:color .15s ease;}
+  nav.main-nav a:hover,nav.main-nav a.active{color:var(--ink);}
+  nav.main-nav a.active{position:relative;}
+  nav.main-nav a.active::after{content:"";position:absolute;left:0;right:0;bottom:-22px;height:2px;background:var(--accent);}
+  .header-actions{display:flex;gap:12px;align-items:center;}
+  .btn{display:inline-block;padding:10px 20px;border-radius:6px;font-size:14px;font-weight:600;border:1px solid transparent;cursor:pointer;transition:.15s ease;}
+  .btn-outline{border-color:var(--border);color:var(--ink);}
+  .btn-outline:hover{border-color:var(--ink);}
+  .btn-primary{background:var(--accent);color:#fff;}
+  .btn-primary:hover{background:#1D4ED8;}
+  .nav-toggle{display:none;background:none;border:none;font-size:22px;cursor:pointer;color:var(--ink);}
+
+  /* Main */
+  .wrap{max-width:1120px;margin:0 auto;padding:0 32px;}
+  .contact-section{padding:88px 0 100px;display:grid;grid-template-columns:0.85fr 1fr;gap:80px;}
+
+  .intro h1{font-size:38px;line-height:1.25;font-weight:700;letter-spacing:-0.01em;max-width:440px;}
+  .intro .lead{margin-top:16px;font-size:16px;color:var(--muted);max-width:420px;}
+
+  .status-line{margin-top:22px;display:flex;align-items:center;gap:8px;font-size:14px;color:var(--muted);}
+  .status-dot{width:7px;height:7px;border-radius:50%;background:#16A34A;flex-shrink:0;}
+
+  .info-rows{margin-top:44px;display:flex;flex-direction:column;gap:22px;}
+  .info-row{display:flex;align-items:center;gap:16px;}
+  .info-icon{
+    width:42px;height:42px;border-radius:10px;background:var(--accent-tint);
+    display:flex;align-items:center;justify-content:center;flex-shrink:0;color:var(--accent);
+  }
+  .info-row .info-text .label{font-size:13px;color:var(--muted);}
+  .info-row .info-text a,.info-row .info-text span.value{font-size:16px;color:var(--ink);}
+  .info-row .info-text a:hover{color:var(--accent);}
+
+  form.contact-form{display:flex;flex-direction:column;gap:16px;}
+  .field input,.field textarea{
+    width:100%;font-family:inherit;font-size:15px;color:var(--ink);
+    padding:14px 16px;border:1px solid var(--border);border-radius:8px;background:var(--field-bg);
+    outline:none;transition:border-color .15s ease;
+  }
+  .field input:focus,.field textarea:focus{border-color:var(--accent);}
+  .field textarea{resize:vertical;min-height:140px;}
+  .contact-form .btn-primary{margin-top:2px;padding:13px 30px;align-self:flex-start;}
+  .form-note{font-size:13px;color:#94A3B8;}
+
+  footer{border-top:1px solid var(--border);padding:28px 0;}
+  .footer-inner{max-width:1120px;margin:0 auto;padding:0 32px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px;}
+  .footer-inner p{font-size:13px;color:var(--muted);}
+  .footer-links{display:flex;gap:20px;}
+  .footer-links a{font-size:13px;color:var(--muted);}
+  .footer-links a:hover{color:var(--ink);}
+
+  @media (max-width: 860px){
+    .header-inner{
+      min-height:68px;
+      padding:16px 20px;
+      gap:12px;
+    }
+
+    .logo{
+      font-size:18px;
+      white-space:nowrap;
+    }
+
+    nav.main-nav{
+      position:fixed;
+      top:68px;
+      left:0;
+      right:0;
+      bottom:0;
+      width:100%;
+      background:rgba(255,255,255,.99);
+      backdrop-filter:blur(10px);
+      flex-direction:column;
+      align-items:stretch;
+      padding:20px 24px 32px;
+      gap:0;
+      transform:translateX(100%);
+      transition:transform .25s ease;
+      z-index:40;
+      overflow-y:auto;
+      box-shadow:-12px 0 32px rgba(15,23,42,.08);
+    }
+
+    nav.main-nav.open{transform:translateX(0);}
+
+    nav.main-nav a{
+      width:100%;
+      padding:15px 0;
+      font-size:17px;
+      border-bottom:1px solid var(--border);
+    }
+
+    nav.main-nav a.active::after{display:none;}
+
+    .header-actions{
+      gap:9px;
+      flex-shrink:0;
+    }
+
+    .header-actions .btn-outline{display:none;}
+
+    .header-actions .btn-primary{
+      padding:10px 15px;
+      font-size:14px;
+      white-space:nowrap;
+    }
+
+    .nav-toggle{
+      display:flex;
+      width:42px;
+      height:42px;
+      align-items:center;
+      justify-content:center;
+      border:1px solid var(--border);
+      border-radius:9px;
+      background:#fff;
+      color:var(--ink);
+      font-size:22px;
+      line-height:1;
+      cursor:pointer;
+    }
+
+    /* Give the content its own horizontal safety area.
+       This prevents headings and form fields from touching the screen edges. */
+    .contact-section{
+      width:100%;
+      grid-template-columns:1fr;
+      gap:40px;
+      padding:54px 20px 72px;
+    }
+
+    .intro{
+      min-width:0;
+    }
+
+    .intro h1{
+      font-size:clamp(30px,8.4vw,38px);
+      line-height:1.16;
+      letter-spacing:-.025em;
+      max-width:100%;
+    }
+
+    .intro .lead{
+      margin-top:18px;
+      font-size:16px;
+      line-height:1.7;
+      max-width:100%;
+    }
+
+    .status-line{
+      margin-top:20px;
+      align-items:flex-start;
+      gap:9px;
+      font-size:14px;
+      line-height:1.55;
+    }
+
+    .status-dot{
+      margin-top:8px;
+    }
+
+    .info-rows{
+      margin-top:30px;
+      gap:18px;
+    }
+
+    .info-row{
+      align-items:flex-start;
+      gap:13px;
+      min-width:0;
+    }
+
+    .info-icon{
+      width:40px;
+      height:40px;
+      border-radius:10px;
+    }
+
+    .info-row .info-text{
+      min-width:0;
+    }
+
+    .info-row .info-text .label{
+      font-size:13px;
+    }
+
+    .info-row .info-text a,
+    .info-row .info-text span.value{
+      display:block;
+      margin-top:2px;
+      font-size:15px;
+      line-height:1.55;
+      overflow-wrap:anywhere;
+      word-break:break-word;
+    }
+
+    form.contact-form{
+      width:100%;
+      gap:14px;
+    }
+
+    .field{
+      width:100%;
+    }
+
+    .field input,
+    .field textarea{
+      width:100%;
+      min-width:0;
+      font-size:16px;
+      padding:14px 15px;
+      border-radius:10px;
+    }
+
+    .field textarea{
+      min-height:150px;
+    }
+
+    .contact-form .btn-primary{
+      width:100%;
+      align-self:stretch;
+      padding:14px 20px;
+      margin-top:2px;
+    }
+
+    .form-note{
+      font-size:12px;
+      line-height:1.5;
+    }
+
+    footer{
+      padding:24px 0;
+    }
+
+    .footer-inner{
+      padding:0 20px;
+      flex-direction:column;
+      text-align:center;
+      gap:14px;
+    }
+
+    .footer-links{
+      gap:16px;
+      flex-wrap:wrap;
+      justify-content:center;
+    }
+  }
+
+  @media (max-width: 480px){
+    .header-inner{
+      padding-left:16px;
+      padding-right:16px;
+    }
+
+    .logo{
+      font-size:17px;
+    }
+
+    .header-actions .btn-primary{
+      padding:9px 12px;
+      font-size:13px;
+    }
+
+    .nav-toggle{
+      width:40px;
+      height:40px;
+    }
+
+    .contact-section{
+      padding:46px 16px 64px;
+      gap:36px;
+    }
+
+    .intro h1{
+      font-size:30px;
+      line-height:1.17;
+    }
+
+    .intro .lead{
+      font-size:15px;
+      line-height:1.7;
+    }
+
+    .status-line{
+      font-size:13px;
+    }
+
+    .info-rows{
+      margin-top:27px;
+      gap:17px;
+    }
+
+    .info-row .info-text a,
+    .info-row .info-text span.value{
+      font-size:14px;
+    }
+
+    .field input,
+    .field textarea{
+      padding:13px 14px;
+      border-radius:9px;
+    }
+  }
+
+  @media (prefers-reduced-motion: reduce){
+    html{scroll-behavior:auto;}
+    nav.main-nav{transition:none;}
+  }
+
+  </style>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="header-inner">
+    <a href="index.html" class="logo">Polas Ahmed</a>
+    <nav class="main-nav" id="mainNav">
+      <a href="index.html#home">Home</a>
+      <a href="index.html#about">About</a>
+      <a href="index.html#skills">Skills</a>
+      <a href="projects.html">Projects</a>
+      <a href="contact.html" class="active">Contact</a>
+    </nav>
+    <div class="header-actions">
+      <a href="resume.pdf" class="btn btn-outline">Resume</a>
+      <a href="mailto:info@polasahmed.com" class="btn btn-primary">Hire Me</a>
+      <button class="nav-toggle" id="navToggle" type="button" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+    </div>
+  </div>
+</header>
+
+<main class="wrap contact-section">
+  <div class="intro">
+    <h1>Let's talk about your next SEO hire.</h1>
+    <p class="lead">I grew one client's organic impressions to 2.57M, and I'd like to bring that kind of impact to your team.</p>
+    <div class="status-line">
+      <span class="status-dot" aria-hidden="true"></span>
+      <span>Open to full-time roles, remote only — replies within 24 hours</span>
+    </div>
+
+    <div class="info-rows">
+      <div class="info-row">
+        <span class="info-icon" aria-hidden="true">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 6.5l9 6 9-6" stroke-linecap="round" stroke-linejoin="round"/><rect x="3" y="5" width="18" height="14" rx="2"/></svg>
+        </span>
+        <div class="info-text">
+          <p class="label">Email</p>
+          <a href="mailto:info@polasahmed.com">info@polasahmed.com</a>
+        </div>
+      </div>
+      <div class="info-row">
+        <span class="info-icon" aria-hidden="true">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="4" y="4" width="16" height="16" rx="4"/><text x="12" y="16" font-family="Sora, sans-serif" font-size="10" font-weight="700" fill="currentColor" stroke="none" text-anchor="middle">in</text></svg>
+        </span>
+        <div class="info-text">
+          <p class="label">LinkedIn</p>
+          <a href="https://www.linkedin.com/in/polas-ahmed/" target="_blank" rel="noopener">linkedin.com/in/polas-ahmed</a>
+        </div>
+      </div>
+      <div class="info-row">
+        <span class="info-icon" aria-hidden="true">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 21s-7-6.1-7-11.5A7 7 0 0 1 19 9.5C19 14.9 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.3"/></svg>
+        </span>
+        <div class="info-text">
+          <p class="label">Location</p>
+          <span class="value">Dhaka, Bangladesh — GMT+6</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <form class="contact-form" id="contactForm">
+    <div class="field">
+      <input type="text" id="name" name="name" placeholder="Your name" required>
+    </div>
+    <div class="field">
+      <input type="email" id="email" name="email" placeholder="Your email" required>
+    </div>
+    <div class="field">
+      <textarea id="message" name="message" placeholder="Tell me about the role" required></textarea>
+    </div>
+    <button type="submit" class="btn btn-primary">Send message</button>
+    <p class="form-note">Opens your email client with the message pre-filled, addressed to info@polasahmed.com.</p>
+  </form>
+</main>
+
+<footer>
+  <div class="footer-inner">
+    <p>© 2026 Polas Ahmed. All rights reserved.</p>
+    <div class="footer-links">
+      <a href="https://www.linkedin.com/in/polas-ahmed/" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="mailto:info@polasahmed.com">Email</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+  const toggle = document.getElementById('navToggle');
+  const nav = document.getElementById('mainNav');
+  toggle.addEventListener('click', () => {
+    const open = nav.classList.toggle('open');
+    toggle.setAttribute('aria-expanded', open);
+    toggle.textContent = open ? '×' : '☰';
+    document.body.style.overflow = open ? 'hidden' : '';
+  });
+
+  nav.querySelectorAll('a').forEach(link => {
+    link.addEventListener('click', () => {
+      nav.classList.remove('open');
+      toggle.setAttribute('aria-expanded', 'false');
+      toggle.textContent = '☰';
+      document.body.style.overflow = '';
+    });
+  });
+
+  document.getElementById('contactForm').addEventListener('submit', function(e){
+    e.preventDefault();
+    const name = document.getElementById('name').value;
+    const email = document.getElementById('email').value;
+    const message = document.getElementById('message').value;
+    const subject = encodeURIComponent('Job Inquiry from ' + name);
+    const body = encodeURIComponent('Name: ' + name + '\nEmail: ' + email + '\n\n' + message);
+    window.location.href = 'mailto:info@polasahmed.com?subject=' + subject + '&body=' + body;
+  });
+</script>
+
+</body>
+</html>
