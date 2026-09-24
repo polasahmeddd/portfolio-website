@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About — Polas Ahmed | AEO &amp; SEO Specialist</title>
+<meta name="description" content="Polas Ahmed helps brands get cited inside AI answers like ChatGPT, Perplexity, and Gemini — with 3+ years of SEO experience behind it.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@500&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --ink:#0F172A;
+    --muted:#5B677A;
+    --paper:#FFFFFF;
+    --accent:#2563EB;
+    --accent-tint:#EFF6FF;
+    --border:#E2E8F0;
+  }
+  *{box-sizing:border-box;margin:0;padding:0;}
+  body{font-family:'IBM Plex Sans',sans-serif;color:var(--ink);background:var(--paper);line-height:1.6;-webkit-font-smoothing:antialiased;}
+  h1,h2,.logo{font-family:'Sora',sans-serif;}
+  .mono{font-family:'IBM Plex Mono',monospace;}
+  a{color:inherit;text-decoration:none;}
+
+  /* Header (shared) */
+  .site-header{border-bottom:1px solid var(--border);}
+  .header-inner{max-width:1120px;margin:0 auto;padding:20px 32px;display:flex;align-items:center;justify-content:space-between;gap:24px;}
+  .logo{font-size:19px;font-weight:700;letter-spacing:-0.01em;}
+  nav.main-nav{display:flex;gap:28px;}
+  nav.main-nav a{font-size:15px;color:var(--muted);transition:color .15s ease;}
+  nav.main-nav a:hover,nav.main-nav a.active{color:var(--ink);}
+  nav.main-nav a.active{position:relative;}
+  nav.main-nav a.active::after{content:"";position:absolute;left:0;right:0;bottom:-22px;height:2px;background:var(--accent);}
+  .header-actions{display:flex;gap:12px;align-items:center;}
+  .btn{display:inline-block;padding:10px 20px;border-radius:6px;font-size:14px;font-weight:600;border:1px solid transparent;cursor:pointer;transition:.15s ease;}
+  .btn-outline{border-color:var(--border);color:var(--ink);}
+  .btn-outline:hover{border-color:var(--ink);}
+  .btn-primary{background:var(--accent);color:#fff;}
+  .btn-primary:hover{background:#1D4ED8;}
+  .nav-toggle{display:none;background:none;border:none;font-size:22px;cursor:pointer;color:var(--ink);}
+
+  .wrap{max-width:1120px;margin:0 auto;padding:0 32px;}
+
+  /* Hero */
+  .hero{padding:80px 0 64px;display:grid;grid-template-columns:200px 1fr;gap:48px;align-items:center;}
+  .avatar{
+    width:200px;height:200px;border-radius:50%;background:var(--accent-tint);
+    display:flex;align-items:center;justify-content:center;overflow:hidden;
+  }
+  .avatar span{font-family:'Sora',sans-serif;font-size:56px;font-weight:700;color:var(--accent);}
+  .avatar img{width:100%;height:100%;object-fit:cover;object-position:center;display:block;}
+  .hero h1{font-size:36px;line-height:1.25;font-weight:700;letter-spacing:-0.01em;max-width:560px;}
+  .hero .lead{margin-top:14px;font-size:16px;color:var(--muted);max-width:520px;}
+  .hero .cta-row{margin-top:24px;display:flex;gap:12px;}
+
+  /* Bio */
+  .bio{padding:0 0 72px;max-width:720px;}
+  .bio p{font-size:16px;color:#334155;}
+  .bio p + p{margin-top:16px;}
+
+  /* Expertise */
+  .expertise{padding:0 0 80px;}
+  .section-head h2{font-size:24px;font-weight:700;letter-spacing:-0.01em;}
+  .section-head p{margin-top:8px;color:var(--muted);font-size:15px;max-width:520px;}
+  .capability-list{margin-top:36px;display:flex;flex-direction:column;}
+  .capability{display:grid;grid-template-columns:220px 1fr;gap:32px;padding:26px 0;border-top:1px solid var(--border);}
+  .capability:last-child{border-bottom:1px solid var(--border);}
+  .capability h3{font-size:17px;font-weight:600;}
+  .capability p{font-size:15px;color:var(--muted);max-width:480px;}
+
+  /* Proof */
+  .proof{padding:0 0 80px;}
+  .proof-grid{margin-top:32px;display:grid;grid-template-columns:repeat(3,1fr);gap:32px;}
+  .stat .figure{font-size:34px;font-weight:600;letter-spacing:-0.01em;}
+  .stat .figure-label{margin-top:6px;font-size:14px;color:var(--muted);}
+  .proof-link{display:inline-block;margin-top:28px;font-size:14px;color:var(--accent);border-bottom:1px solid rgba(37,99,235,0.35);}
+  .proof-link:hover{border-color:var(--accent);}
+
+  /* Availability strip */
+  .availability{border-top:1px solid var(--border);border-bottom:1px solid var(--border);padding:28px 0;margin-bottom:80px;}
+  .availability-inner{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:16px;}
+  .status-line{display:flex;align-items:center;gap:8px;font-size:14px;color:var(--muted);}
+  .status-dot{width:7px;height:7px;border-radius:50%;background:#16A34A;}
+
+  footer{border-top:1px solid var(--border);padding:28px 0;}
+  .footer-inner{max-width:1120px;margin:0 auto;padding:0 32px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px;}
+  .footer-inner p{font-size:13px;color:var(--muted);}
+  .footer-links{display:flex;gap:20px;}
+  .footer-links a{font-size:13px;color:var(--muted);}
+  .footer-links a:hover{color:var(--ink);}
+
+  /* ---------- RESPONSIVE ---------- */
+  @media (max-width:900px){
+    .hero{grid-template-columns:140px 1fr;gap:32px;padding:64px 0 52px;}
+    .avatar{width:140px;height:140px;}
+    .avatar span{font-size:42px;}
+    .hero h1{font-size:32px;}
+    .proof-grid{gap:24px;}
+    .capability{grid-template-columns:190px 1fr;gap:24px;}
+  }
+
+  @media (max-width:760px){
+    body{font-size:15px;overflow-x:hidden;}
+    .wrap{padding-left:20px;padding-right:20px;}
+
+    /* Mobile header */
+    .site-header{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.96);backdrop-filter:blur(10px);}
+    .header-inner{height:68px;padding:14px 20px;gap:12px;}
+    .logo{font-size:18px;}
+    .header-actions{gap:8px;margin-left:auto;}
+    .header-actions .btn-outline{display:none;}
+    .header-actions .btn-primary{padding:9px 14px;font-size:13px;}
+    .nav-toggle{
+      display:flex;width:42px;height:42px;align-items:center;justify-content:center;
+      border:1px solid var(--border);border-radius:7px;background:var(--paper);
+      font-size:0;position:relative;flex-shrink:0;
+    }
+    .nav-toggle::before,.nav-toggle::after{
+      content:"";position:absolute;width:18px;height:2px;background:var(--ink);
+      transition:transform .2s ease;
+    }
+    .nav-toggle::before{transform:translateY(-4px);}
+    .nav-toggle::after{transform:translateY(4px);}
+    .nav-toggle.open::before{transform:rotate(45deg);}
+    .nav-toggle.open::after{transform:rotate(-45deg);}
+
+    nav.main-nav{
+      position:fixed;top:68px;left:0;right:0;bottom:0;
+      background:rgba(255,255,255,.98);backdrop-filter:blur(10px);
+      flex-direction:column;align-items:stretch;padding:28px 20px 40px;gap:4px;
+      transform:translateX(100%);transition:transform .22s ease;
+      z-index:40;overflow-y:auto;
+    }
+    nav.main-nav.open{transform:translateX(0);}
+    nav.main-nav a{
+      font-size:18px;padding:15px 4px;border-bottom:1px solid var(--border);
+    }
+    nav.main-nav a.active{font-weight:600;color:var(--accent);}
+    nav.main-nav a.active::after{display:none;}
+
+    /* Hero */
+    .hero{
+      grid-template-columns:1fr;text-align:left;gap:24px;
+      padding:44px 0 42px;
+    }
+    .avatar{width:112px;height:112px;}
+    .avatar span{font-size:34px;}
+    .hero h1{font-size:29px;line-height:1.2;max-width:none;}
+    .hero .lead{margin-top:14px;font-size:15.5px;line-height:1.65;max-width:none;}
+    .hero .cta-row{margin-top:22px;display:grid;grid-template-columns:1fr;gap:10px;}
+    .hero .cta-row .btn{width:100%;text-align:center;padding:12px 16px;}
+
+    /* Content */
+    .bio{padding-bottom:56px;max-width:none;}
+    .bio p{font-size:15.5px;line-height:1.7;}
+    .bio p + p{margin-top:18px;}
+
+    .expertise{padding-bottom:60px;}
+    .section-head h2{font-size:22px;}
+    .section-head p{font-size:14px;line-height:1.6;}
+    .capability-list{margin-top:26px;}
+    .capability{
+      grid-template-columns:1fr;gap:8px;padding:22px 0;
+    }
+    .capability h3{font-size:16px;}
+    .capability p{font-size:14.5px;line-height:1.65;max-width:none;}
+
+    .proof{padding-bottom:60px;}
+    .proof-grid{
+      margin-top:26px;grid-template-columns:1fr;gap:0;
+    }
+    .stat{padding:18px 0;border-top:1px solid var(--border);}
+    .stat:last-child{border-bottom:1px solid var(--border);}
+    .stat .figure{font-size:30px;}
+    .stat .figure-label{font-size:13.5px;margin-top:3px;}
+    .proof-link{margin-top:22px;font-size:14px;}
+
+    .availability{
+      padding:22px 0;margin-bottom:56px;
+    }
+    .availability-inner{
+      flex-direction:column;align-items:stretch;gap:16px;
+    }
+    .status-line{align-items:flex-start;font-size:13.5px;line-height:1.5;}
+    .availability .btn{text-align:center;width:100%;}
+
+    /* Footer */
+    footer{padding:24px 0;}
+    .footer-inner{
+      padding:0 20px;flex-direction:column;align-items:flex-start;gap:14px;
+    }
+    .footer-links{gap:18px;flex-wrap:wrap;}
+    .footer-links a{font-size:13px;}
+  }
+
+  @media (max-width:390px){
+    .header-inner{padding-left:16px;padding-right:16px;}
+    .wrap{padding-left:16px;padding-right:16px;}
+    .logo{font-size:17px;}
+    .header-actions .btn-primary{display:none;}
+    .hero{padding-top:36px;}
+    .hero h1{font-size:26px;}
+    .hero .lead{font-size:15px;}
+    .avatar{width:96px;height:96px;}
+    .avatar span{font-size:30px;}
+    nav.main-nav{padding-left:16px;padding-right:16px;}
+    .footer-inner{padding-left:16px;padding-right:16px;}
+  }
+
+  @media (prefers-reduced-motion: reduce){
+    nav.main-nav,.nav-toggle::before,.nav-toggle::after{transition:none;}
+  }
+</style>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="header-inner">
+    <a href="index.html" class="logo">Polas Ahmed</a>
+    <nav class="main-nav" id="mainNav">
+      <a href="index.html#home">Home</a>
+      <a href="about.html" class="active">About</a>
+      <a href="index.html#skills">Skills</a>
+      <a href="projects.html">Projects</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <div class="header-actions">
+      <a href="resume.pdf" class="btn btn-outline">Resume</a>
+      <a href="mailto:info@polasahmed.com" class="btn btn-primary">Hire Me</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+    </div>
+  </div>
+</header>
+
+<main>
+  <section class="wrap hero">
+    <div class="avatar"><img src="assets/polas-ahmed.jpg" alt="Polas Ahmed"></div>
+    <div>
+      <h1>I get brands cited inside AI answers — not just ranked on Google.</h1>
+      <p class="lead">SEO &amp; AI Search Optimization specialist with 3+ years of experience, currently looking for a full-time remote role.</p>
+      <div class="cta-row">
+        <a href="resume.pdf" class="btn btn-outline">Download Resume</a>
+        <a href="contact.html" class="btn btn-primary">Get in Touch</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="wrap bio">
+    <p>Search has split in two — the ten blue links, and the answer an AI gives before a person ever clicks through. Most SEOs are still optimizing for the first one. I specialize in the second: structuring a brand's content, technical signals, and topical authority so that tools like ChatGPT, Perplexity, and Gemini surface and cite it directly.</p>
+    <p>That's built on a solid SEO foundation, not instead of one — three years of driving organic growth for client sites, now applied to a search landscape that's moving faster than most teams can keep up with. I'm building this portfolio to bring that skillset in-house, full-time, to a team outside Bangladesh.</p>
+  </section>
+
+  <section class="wrap expertise">
+    <div class="section-head">
+      <h2>What I focus on</h2>
+      <p>Three areas that work together — not one at the expense of the others.</p>
+    </div>
+    <div class="capability-list">
+      <div class="capability">
+        <h3>AI Search Visibility</h3>
+        <p>Getting a brand mentioned and cited inside AI-generated answers — the layer most SEO strategies still ignore.</p>
+      </div>
+      <div class="capability">
+        <h3>Technical SEO Foundations</h3>
+        <p>The crawlability, structured data, and site architecture that both traditional search and AI systems rely on to understand a site at all.</p>
+      </div>
+      <div class="capability">
+        <h3>Content &amp; Entity Strategy</h3>
+        <p>Structuring content so it's easy to extract, quote, and trust — for search engines, AI models, and human readers alike.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="wrap proof">
+    <div class="section-head">
+      <h2>Results, briefly</h2>
+    </div>
+    <div class="proof-grid">
+      <div class="stat">
+        <p class="figure mono">3+</p>
+        <p class="figure-label">Years of SEO experience</p>
+      </div>
+      <div class="stat">
+        <p class="figure mono">2.57M+</p>
+        <p class="figure-label">Organic impressions — IV Better</p>
+      </div>
+      <div class="stat">
+        <p class="figure mono">3M+</p>
+        <p class="figure-label">Organic impressions — Better Appliance DMV</p>
+      </div>
+    </div>
+    <a class="proof-link" href="projects.html">See the full case studies →</a>
+  </section>
+
+  <section class="wrap availability">
+    <div class="availability-inner">
+      <div class="status-line">
+        <span class="status-dot" aria-hidden="true"></span>
+        <span>Open to full-time roles, remote only — based in Dhaka, GMT+6</span>
+      </div>
+      <a href="contact.html" class="btn btn-outline">Contact me</a>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="footer-inner">
+    <p>© 2026 Polas Ahmed. All rights reserved.</p>
+    <div class="footer-links">
+      <a href="https://www.linkedin.com/in/polas-ahmed/" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="mailto:info@polasahmed.com">Email</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+  const toggle = document.getElementById('navToggle');
+  const nav = document.getElementById('mainNav');
+  toggle.addEventListener('click', () => {
+    const open = nav.classList.toggle('open');
+    toggle.classList.toggle('open', open);
+    toggle.setAttribute('aria-expanded', open);
+    document.body.style.overflow = open ? 'hidden' : '';
+  });
+
+  nav.querySelectorAll('a').forEach(link => {
+    link.addEventListener('click', () => {
+      nav.classList.remove('open');
+      toggle.classList.remove('open');
+      toggle.setAttribute('aria-expanded', 'false');
+      document.body.style.overflow = '';
+    });
+  });
+</script>
+
+</body>
+</html>
